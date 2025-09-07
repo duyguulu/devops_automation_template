@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "pypackit"]
+build-backend = "setuptools.build_meta"
+
+[tool.pypackit]
+name = "devops_automation_template"
+version = "0.1.0"
+description = "Devops Automation Template Project"
+author = "Your Name"
+author_email = "you@example.com"
+license = "MIT"
+packages = ["my_module"]
+python_requires = ">=3.10"
+dependencies = ["numpy", "scipy", "matplotlib"]
+
+[tool.pypackit.docs]
+source_dir = "docs"
+output_dir = "docs/_build"
