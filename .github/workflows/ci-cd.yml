@@ -23,7 +23,7 @@ jobs:
         pip install packit pytest sphinx
 
     - name: Build package
-      run: packit srpm
+      run: python -m build
 
     - name: Run tests
       run: pytest tests/
