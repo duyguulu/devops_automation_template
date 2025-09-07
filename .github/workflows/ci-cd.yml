@@ -20,10 +20,10 @@ jobs:
     - name: Install dependencies
       run: |
         pip install --upgrade pip
-        pip install pypackit pytest sphinx
+        pip install packit pytest sphinx
 
     - name: Build package
-      run: pypackit build
+      run: packit srpm
 
     - name: Run tests
       run: pytest tests/
